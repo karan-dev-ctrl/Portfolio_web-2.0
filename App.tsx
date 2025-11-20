@@ -10,7 +10,7 @@ const App: React.FC = () => {
     <div className="antialiased">
       <Header />
       <main>
-        <Hero />
+        <Hero />``
         <Projects />
         <About />
         <Contact />
