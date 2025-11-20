@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
-import AIChat from './components/AIChat';
 
 const App: React.FC = () => {
   return (
@@ -16,7 +15,7 @@ const App: React.FC = () => {
         <About />
         <Contact />
       </main>
-      <AIChat />
+      {/* <AIChat /> */}
     </div>
   );
 };
