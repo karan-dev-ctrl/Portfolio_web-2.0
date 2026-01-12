@@ -60,14 +60,14 @@ const Header: React.FC = () => {
           <div className="w-px h-4 bg-gray-300"></div>
 
           {/* Resume Link */}
-          <a 
+          {/* <a 
             href="/Karan_Palpandi_CV.pdf" 
             download
             className="flex items-center gap-2 text-sm font-medium text-black hover:text-gray-600 transition-colors group"
           >
             <span>Resume</span>
             <Download size={16} className="group-hover:translate-y-0.5 transition-transform" />
-          </a>
+          </a> */}
 
         {/* Mobile Menu Button */}
         <button 
@@ -91,14 +91,14 @@ const Header: React.FC = () => {
             </button>
           ))}
           <hr className="border-gray-100 my-2" />
-          <a 
+          {/* <a 
             href="/Karan_Palpandi_CV.pdf"
             download 
             className="flex items-center gap-2 text-left text-lg font-medium text-black hover:text-gray-600"
           >
             Download Resume
             <Download size={18} />
-          </a>
+          </a> */}
         </div>
       )}
     </header>

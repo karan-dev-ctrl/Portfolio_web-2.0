@@ -1,21 +1,23 @@
-import React from 'react';
-import { SectionId, Project } from '../types';
-import { ArrowUpRight } from 'lucide-react';
+import React from "react";
+import { SectionId, Project } from "../types";
+import { ArrowUpRight } from "lucide-react";
 
 const projects: Project[] = [
   {
     id: 1,
-    title: "E-Commerce Dashboard",
-    description: "A comprehensive analytics dashboard for online retailers utilizing modern data visualization techniques.",
-    tech: ["Next.js", "TypeScript", "Recharts"],
-    link: "#",
+    title: "AI Chatbot",
+    description:
+      "Developed a real-time AI chatbot using Next.js and Mistral AI Open API to support conversational access to document-based information.",
+    tech: ["React", "Tailwind CSS", "Mistral AI Open API"],
+    link: "https://github.com/karan-dev-ctrl/MIstral-AI---Chatbot",
   },
   {
     id: 2,
-    title: "AI Content Studio",
-    description: "Generative AI platform allowing users to create marketing copy and imagery in seconds.",
-    tech: ["React", "Gemini API", "Tailwind"],
-    link: "#",
+    title: "Data Clustering & Classification - Google Review Dataset",
+    description:
+      "Designed and evaluated unsupervised ML pipelines using K-Means, DBSCAN, Spectral Clustering, and PCA.",
+    tech: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "PCA"],
+    link: "https://github.com/karan-dev-ctrl/Machine-Learning---Data-Clustering-project/blob/master/Data%20Clustering.ipynb",
   },
 ];
 
@@ -30,8 +32,11 @@ const Projects: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <div 
-              key={project.id} 
+            <a
+              key={project.id}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl hover:border-gray-200 transition-all duration-300 flex flex-col justify-between h-80"
             >
               <div>
@@ -39,21 +44,27 @@ const Projects: React.FC = () => {
                   <h3 className="text-2xl font-bold group-hover:text-gray-600 transition-colors">
                     {project.title}
                   </h3>
-                  <ArrowUpRight size={24} className="opacity-0 group-hover:opacity-100 transition-opacity -translate-y-2 group-hover:translate-y-0" />
+                  <ArrowUpRight
+                    size={24}
+                    className="opacity-0 group-hover:opacity-100 transition-opacity -translate-y-2 group-hover:translate-y-0"
+                  />
                 </div>
                 <p className="text-secondary leading-relaxed mb-6">
                   {project.description}
                 </p>
               </div>
-              
+
               <div className="flex flex-wrap gap-2">
                 {project.tech.map((t) => (
-                  <span key={t} className="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-gray-600 uppercase tracking-wider">
+                  <span
+                    key={t}
+                    className="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-gray-600 uppercase tracking-wider"
+                  >
                     {t}
                   </span>
                 ))}
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
