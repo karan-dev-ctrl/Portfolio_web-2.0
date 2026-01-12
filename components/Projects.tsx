@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl hover:border-gray-200 transition-all duration-300 flex flex-col justify-between h-80"
+              className="group bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-xl hover:border-gray-200 transition-all duration-300 flex flex-col justify-between h-90"
             >
               <div>
                 <div className="flex justify-between items-start mb-4">
