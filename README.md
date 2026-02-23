@@ -1,8 +1,1 @@
-@startuml
 
-:First Actor:
-:Another\nactor: as Man2
-actor Woman3
-actor :Last actor: as Person1
-
-@enduml
